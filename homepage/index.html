@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiayi Wu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+function toggleDropdown() {
+    var dropdown = document.getElementById("projectDropdown");
+    if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+    } else {
+        dropdown.style.display = "block";
+    }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        for (var i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.style.display === "block") {
+                openDropdown.style.display = "none";
+            }
+        }
+    }
+}
+</script>
+
+<body>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <h1><a href="index.html" style="text-decoration:none; color:inherit;">Jiayi Wu</a></h1>
+            <nav>
+                <ul>
+                    <!-- <li><a href="about.html">About</a></li> -->
+                    <li><a href="https://docs.google.com/document/d/147DGi_csbDRAbvQKiTb6-FilOEqsEY_5raMRupz1Ge8/edit?usp=sharing">Resume</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn" onclick="toggleDropdown()">Projects</a>
+                        <div class="dropdown-content" id="projectDropdown">
+                            <a href="/Users/crystal/Documents/MAMP/interactive/index.html">Interactive Computing</a>
+                            <a href="https://docs.google.com/document/d/1zdyum0gSVIF_UJr-TDepEPUeN7jUz5Mq_4hu3i4fCwQ/edit?usp=sharing">LoL Champion Analysis</a>
+                            <a href="https://www.canva.com/design/DAGCza6d-p4/mjpmgZcY0QsGJB5efD0BdA/edit?utm_content=DAGCza6d-p4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">GTM Plan for Party Animals</a>
+                            <a href="https://composingdigitalmedia.org/f21_dmtp/web/wcr/index.html">Climate Change Awareness Website</a>
+
+        
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="main-section">
+        <div class="content-container">
+            <!-- Left Column -->
+            <div class="left-column">
+                <div class="profile-picture">
+                    <img src="assets/wu1.jpg" alt="Jiayi Wu">
+                </div>
+                <h2>Jiayi Wu</h2>
+                <p class="job-title">Communication Data Science Student</p>
+<!--                 <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/crystaljiayiwu/" target="_blank"><img src="assets/linkedin.png" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/crystal.jyw/"><img src="assets/ins.png" alt="Instagram"></a>
+                </div> -->
+            </div>
+
+            <!-- Right Column -->
+            <div class="right-column">
+                <h3>Hello!</h3>
+                <p>I am currently pursuing my master's degree in Communication Data Science at USC, building on my foundation from NYU, where I completed my Bachelor's degree in <a href="https://steinhardt.nyu.edu/departments/media-culture-and-communication" target="_blank">Media, Culture, and Communication (MCC) </a>with a minor in computer science. <br>
+                    <br>
+                I have a deep passion for the gaming industry and gaming market research. Using my data analysis skills, I focus on solving complex problems within the gaming world, such as identifying trends, optimizing user experiences, and predicting player behaviors. By leveraging data, I aim to uncover valuable insights that can help shape gaming strategies, enhance player retention, and improve overall market performance.</p>
+<!--                 <div class="buttons">
+                    <a href="path/to/your-resume.docx" class="btn-primary" download="Your-Resume.docx">Resume</a>
+                    <a href="#projects" class="btn-outline">Projects</a>
+                </div> -->
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-info">
+            <div class="contact-info">
+                <p>Call</p>
+                <p>929-655-2137</p>
+            </div>
+            <div class="contact-info">
+                <p>Email</p>
+                <p>crystalwujiayi@gmail.com</p>
+            </div>
+            <div class="social-footer">
+                <p>Follow</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/crystaljiayiwu/" target="_blank">
+                        <img src="assets/linkedin.png" alt="LinkedIn">
+                    </a>
+                    <a href="https://www.instagram.com/crystal.jyw/"><img src="assets/ins.png" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <p>© 2024 by Jiayi Wu. All rights reserved.</p>
+    </footer>
+</body>
+</html>
